@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'JetBrains';
+    src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    font-family: 'JetBrains', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 100%;
+}
+
+header {
+    background-color: #2bbc8a;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    align-items: center;
+    height: 60px; 
+}
+
+nav ul li {
+    margin: 0; 
+    padding: 0;
+}
+
+.tab {
+    flex: 1; 
+    text-align: center;
+    background-color: #2bbc8a;
+    padding:0;
+}
+
+.tab a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background-color: #26a07c;
+}
+
+.logo {
+    width: 60px; 
+    background-color: #bbb;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background-color: #fafafa;
+    height: calc(100vh - 60px);
+}
+
+.sidebar {
+    width: 20%;
+    background-color: rgba(255, 165, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box; 
+    height: calc(100vh - 60px);
+}
+
+.sidebar input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.sidebar label {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: block;
+}
+
+.sidebar #tooltip {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    background-color: #fafafa;
+    border: 2px dashed #2bbc8a;
+    padding: 10px;
+    box-sizing: border-box;
+    visibility: hidden;
+    text-align: center;
+}
+
+.sidebar #tooltip p {
+    font-weight: bold;
+    color: #2bbc8a;
+}
+
+#info {
+    padding: 0;
+    padding-top: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+#tree-container {
+    background-color: #fafafa;
+    flex-grow: 1;
+}
+
+.default-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 32px;
+    color: #757575;
+    text-align: center;
+}
+
+.link {
+  fill: none;
+  stroke-width: 1px;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: black;
+  stroke-width: 2px;
+  cursor: pointer;
+}
+
+#logo {
+    display: inline-block;
+    float: left;
+    margin-right: 0;
+    width: 60px;
+    height: 60px;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    -webkit-filter:grayscale(100%)
+}
+
+#logo:hover {
+    filter: none;
+    -webkit-filter:none
+}
